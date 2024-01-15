@@ -5,14 +5,14 @@ import uuid
 import json
 import socket
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="template")
 app.secret_key = '123414'  # Replace with your actual secret key
 
 def send_tcp_message(user_id,wave_count,user_team):
 
 
-    server_ip = '172.20.100.114'  
-    server_port = 5000  
+    server_ip = '172.21.102.143'  
+    server_port = 80  
     message = "ID:"+str(user_id.replace('-',''))+"/Team:"+str(user_team[-1])+"/DisplayName:"+str(user_id[-4:])+";addInitHP:"+str(wave_count)
 
 
@@ -54,7 +54,7 @@ def send_waves():
     return jsonify({'status': 'success', 'user_id': user_id, 'wave_count': wave_count,'user_team':user_team})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 
