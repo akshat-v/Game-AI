@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="arm642">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/carl/lib/lwjgl/natives/linux/arm64/lwjgl-glfw-natives-linux-arm64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/carl/lib/lwjgl/natives/linux/arm64/lwjgl-openal-natives-linux-arm64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/carl/lib/lwjgl/natives/linux/arm64/lwjgl-opengl-natives-linux-arm64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/carl/lib/lwjgl/natives/linux/arm64/lwjgl-natives-linux-arm64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
