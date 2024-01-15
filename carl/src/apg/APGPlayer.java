@@ -71,9 +71,10 @@ public class APGPlayer {
 		getPlayers().forEach(p -> {	
 			if (p.getTeam() != character.isPlayerNumber()) // Ignore if APG player does not belong to the team
 				return;
-			
-			
-			
+
+			// APG participation addition(s)
+			character.setHp(character.getHp() + p.getHPBoost());
+
 			// Create a CompletableFuture
 	        CompletableFuture<Void> resetTask = CompletableFuture.runAsync(() -> {
 	            // Delay before resetting the value
